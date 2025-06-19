@@ -1,0 +1,10 @@
+modLoader="javafml"
+loaderVersion="[47,)" # Forge 1.20.1 usa FML 47.x
+license="MIT"
+
+[[mods]]
+modId="arcanus"
+version="1.0.0"
+displayName="Arcanus"
+description='''Mod mágico que adiciona elementos arcanos ao jogo'''
+authors = 'PaiPain'
