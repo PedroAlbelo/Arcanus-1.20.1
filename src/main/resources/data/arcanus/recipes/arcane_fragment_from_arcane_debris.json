@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "arcanus:arcane_debris"
+  },
+  "result": "arcanus:arcane_fragment",
+  "experience": 2.0,
+  "cookingtime": 200
+}

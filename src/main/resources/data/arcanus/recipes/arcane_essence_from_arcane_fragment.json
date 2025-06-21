@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " F ",
+    "FDF",
+    " F "
+  ],
+  "key": {
+    "F": {
+      "item": "arcanus:arcane_fragment"
+    },
+    "D": {
+      "item": "minecraft:diamond"
+    }
+  },
+  "result": {
+    "item": "arcanus:arcane_essence",
+    "count": 1
+  }
+}

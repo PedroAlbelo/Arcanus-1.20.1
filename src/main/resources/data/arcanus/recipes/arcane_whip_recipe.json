@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " E ",
+    "ESE",
+    "TE "
+  ],
+  "key": {
+    "E": {
+      "item": "arcanus:arcane_essence"
+    },
+    "S": {
+      "item": "minecraft:lead"
+    },
+    "T": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "arcanus:arcane_whip",
+    "count": 1
+  }
+}

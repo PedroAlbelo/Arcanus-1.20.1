@@ -1,0 +1,9 @@
+{
+  "__comment": "Este arquivo define quais blocos só podem ser minerados com ferramentas de ferro ou melhores (ferro, diamante, netherite). Não inclui ferramentas de pedra ou madeira.",
+  "values": [
+    "arcanus:arcane_block",
+    "arcanus:arcane_debris"
+
+  ]
+}
+

@@ -1,0 +1,37 @@
+{
+  "item.arcanus.arcane_whip": "Arcane Whip",
+  "item.arcanus.arcane_essence": "Arcane Essence",
+  "item.arcanus.arcane_fragment":"Arcane Fragment",
+  "block.arcanus.arcane_debris": "Arcane Debris",
+  "block.arcanus.arcane_block": "Arcane Crystals",
+  "block.arcanus.sigil_column": "sigil column",
+  "block.arcanus.foundation_arcane": "foundation arcane",
+  "block.arcanus.crystal_capstone": "Crystal Capstone",
+  "block.arcanus.arcane_pillar": "Arcane Pillar",
+  "item.arcanus.voodoo": "Voodoo",
+  "painting.arcanus.arcana_suc.tittle": "ARCANA",
+  "painting.arcanus.arcana_suc.author": "PaiPain",
+  "painting.arcanus.bunny_girl.tittle": "Bunnygirl",
+  "painting.arcanus.bunny_girl.author": "PaiPain",
+  "painting.arcanus.dark_eye.tittle": "Dark_eye",
+  "painting.arcanus.dark_eye.author": "PaiPain",
+  "painting.arcanus.dragon_stone.tittle": "Dragon Stone",
+  "painting.arcanus.dragon_stone.author": "PaiPain",
+  "painting.arcanus.green_witch.tittle": "Green Witch",
+  "painting.arcanus.green_witch.author": "PaiPain",
+  "painting.arcanus.lady_arcane.tittle": "Lady Arcane",
+  "painting.arcanus.lady_arcane.author": "PaiPain",
+  "painting.arcanus.magic_pit.tittle": "Magic Pit",
+  "painting.arcanus.magic_pit.author": "PaiPain",
+  "painting.arcanus.portal_rune.tittle": "Portal Rune",
+  "painting.arcanus.portal_rune.author": "PaiPain",
+  "painting.arcanus.street_girl.tittle": "Street Girl",
+  "painting.arcanus.street_girl.author": "PaiPain",
+  "painting.arcanus.suc_runes.tittle": "Succubus Runes",
+  "painting.arcanus.suc_runes.author": "PaiPain",
+
+  "tooltip.arcanus.ArcaneWhipItem.tooltip": "gives order to Arcane Slaves",
+
+  "creativetab.arcanus_tab": "Arcanus"
+}
+

@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "top": "arcanus:block/foundation_arcane_top",
+    "bottom": "arcanus:block/foundation_arcane_top",
+    "side": "arcanus:block/sigil_column_side"
+  }
+}

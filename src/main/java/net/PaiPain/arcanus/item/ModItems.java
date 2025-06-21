@@ -1,6 +1,8 @@
-package net.PaiPain.arcanus.registry;
+package net.PaiPain.arcanus.item;
 
 import net.PaiPain.arcanus.Arcanus;
+import net.PaiPain.arcanus.item.custom.ArcaneWhipItem;
+import net.PaiPain.arcanus.item.custom.ItemVoodoo;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -15,6 +17,16 @@ public class ModItems {
 
     public static final RegistryObject<Item> ARCANE_ESSENCE = ITEMS.register("arcane_essence",
             () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> arcane_fragment = ITEMS.register("arcane_fragment",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> Arcane_Whip = ITEMS.register("arcane_whip",
+            () -> new ArcaneWhipItem(new Item.Properties().stacksTo(1)));
+
+    public static final RegistryObject<Item> VOODOO = ITEMS.register("voodoo",
+            () -> new ItemVoodoo(new Item.Properties().stacksTo(1).durability(1)));
+
 
     public static void register(IEventBus bus) {
         ITEMS.register(bus);

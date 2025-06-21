@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "arcanus:arcane_block"
+    }
+  ],
+  "result": {
+    "item": "arcanus:arcane_fragment",
+    "count": 9
+  }
+}

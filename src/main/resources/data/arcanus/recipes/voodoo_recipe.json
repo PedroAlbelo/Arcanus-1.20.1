@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " F ",
+    "FDF",
+    " F "
+  ],
+  "key": {
+    "F": {
+      "item": "minecraft:wheat"
+    },
+    "D": {
+      "item": "arcanus:arcane_essence"
+    }
+  },
+  "result": {
+    "item": "arcanus:voodoo",
+    "count": 1
+  }
+}
