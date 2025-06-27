@@ -49,8 +49,17 @@ public class MiningAreaManager {
      * @param pos posição a verificar
      * @return true se estiver marcado
      */
-    public static boolean isInMiningZone(BlockPos pos) {
+    public static boolean isBlockMarked(BlockPos pos) {
         return markedBlocks.contains(pos);
+    }
+
+    /**
+     * Remove um bloco da área de mineração.
+     *
+     * @param pos posição do bloco a ser removido
+     */
+    public static void removeMarkedBlock(BlockPos pos) {
+        markedBlocks.remove(pos);
     }
 
     /**
@@ -58,7 +67,7 @@ public class MiningAreaManager {
      *
      * @return conjunto imutável de blocos
      */
-    public static Set<BlockPos> getAll() {
+    public static Set<BlockPos> getMarkedBlocks() {
         return Collections.unmodifiableSet(markedBlocks);
     }
 
