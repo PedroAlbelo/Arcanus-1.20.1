@@ -31,6 +31,9 @@
   "painting.arcanus.suc_runes.author": "PaiPain",
 
   "tooltip.arcanus.ArcaneWhipItem.tooltip": "gives order to Arcane Slaves",
+  "entity.arcanus.arcane_slave": "Arcane Slave",
+  "item.arcanus.arcane_slave_spawn_egg": "Arcane Slave Spawn Egg",
+  "item.arcanus.arcane_hammer": "Arcane Hammer",
 
   "creativetab.arcanus_tab": "Arcanus"
 }

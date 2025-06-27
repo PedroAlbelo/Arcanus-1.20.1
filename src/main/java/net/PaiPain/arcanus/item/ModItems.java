@@ -1,10 +1,13 @@
 package net.PaiPain.arcanus.item;
 
 import net.PaiPain.arcanus.Arcanus;
+import net.PaiPain.arcanus.entity.ModEntities;
+import net.PaiPain.arcanus.item.custom.ArcaneHammerItem;
 import net.PaiPain.arcanus.item.custom.ArcaneWhipItem;
 import net.PaiPain.arcanus.item.custom.ItemVoodoo;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.CreativeModeTabs;
+import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -27,6 +30,12 @@ public class ModItems {
     public static final RegistryObject<Item> VOODOO = ITEMS.register("voodoo",
             () -> new ItemVoodoo(new Item.Properties().stacksTo(1).durability(1)));
 
+    public static final RegistryObject<Item> ARCANE_SLAVE_SPAWN_EGG = ITEMS.register("arcane_slave_spawn_egg",
+            () -> new ForgeSpawnEggItem(ModEntities.ARCANE_SLAVE, 0x7a4cff, 0x2e003d, new Item.Properties()));
+
+
+    public static final RegistryObject<Item> ARCANE_HAMMER = ITEMS.register("arcane_hammer",
+            () -> new ArcaneHammerItem(new Item.Properties().stacksTo(1)));
 
     public static void register(IEventBus bus) {
         ITEMS.register(bus);

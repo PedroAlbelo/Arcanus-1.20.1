@@ -31,7 +31,7 @@ public class ModPaintings {
             () -> new PaintingVariant(32, 48));
 
     public static final RegistryObject<PaintingVariant> LADY_ARCANE = PAINTINGS.register("lady_arcane",
-            () -> new PaintingVariant(32, 32));
+            () -> new PaintingVariant(64, 48));
 
     public static final RegistryObject<PaintingVariant> MAGIC_PIT = PAINTINGS.register("magic_pit",
             () -> new PaintingVariant(32, 32));

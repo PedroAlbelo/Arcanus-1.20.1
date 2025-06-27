@@ -28,6 +28,8 @@ public class ModCreativeModTabs {
                         output.accept(ModBlocks.CRYSTAL_CAPSTONE.get());
                         output.accept(ModBlocks.ARCANE_PILLAR.get());
                         output.accept(ModItems.VOODOO.get());
+                        output.accept(ModItems.ARCANE_SLAVE_SPAWN_EGG.get());
+                        output.accept(ModItems.ARCANE_HAMMER.get());
                     } ))
                     .build());
 

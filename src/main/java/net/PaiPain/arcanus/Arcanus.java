@@ -1,6 +1,7 @@
 package net.PaiPain.arcanus;
 
 import com.mojang.logging.LogUtils;
+import net.PaiPain.arcanus.entity.ModEntities;
 import net.PaiPain.arcanus.item.ModCreativeModTabs;
 import net.PaiPain.arcanus.block.ModBlocks;
 import net.PaiPain.arcanus.item.ModItems;
@@ -28,6 +29,7 @@ public class Arcanus {
         ModCreativeModTabs.register(modEventBus);
 
         // Registra os itens e blocos
+        ModEntities.register(modEventBus);
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
 
@@ -39,6 +41,8 @@ public class Arcanus {
 
         // EventBus global (ex: eventos do servidor)
         MinecraftForge.EVENT_BUS.register(this);
+
+
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
