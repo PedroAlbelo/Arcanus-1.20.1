@@ -72,26 +72,32 @@ public class ArcaneSlave<T extends Entity> extends HierarchicalModel<T> {
 			ArcaneSlaveEntity.Mode mode = slave.getMode();
 
 			if (mode == ArcaneSlaveEntity.Mode.MINE) {
-				float cycle = ageInTicks * 10f;
-				float armSwing = Mth.sin(cycle) * 1.2f;
+				float cycle = (ageInTicks / 36f) % 1f; // ciclo bem lento e contínuo
+				float armRot = (float) Math.toRadians(Mth.sin(cycle * Mth.TWO_PI) * 90f); // valor mais contido que 137.5
 
-				this.left_arm.xRot = -armSwing;
-				this.right_arm.xRot = -armSwing;
-				this.head.y += Mth.sin(cycle) * 1.0f;
-				this.torso.y += 0.5f * Mth.sin(cycle);
+				this.left_arm.xRot = -armRot;
+				this.right_arm.xRot = -armRot;
+
+				// Head "pulando" levemente, suavizado
+				this.head.y += Mth.sin(cycle * Mth.TWO_PI * 2f) * 0.5f;
+
+				// Torso "pulsando" suavemente
+				this.torso.y += Mth.sin(cycle * Mth.TWO_PI) * 0.4f;
 				return;
 			}
+
 
 			if (mode == ArcaneSlaveEntity.Mode.ATTACK) {
-				float cycle = ageInTicks * 6f;
-				float swing = Mth.sin(cycle) * 2.0f;
+				float cycle = (ageInTicks / 36f) % 1f; // Ciclo bem lento e contínuo
+				float armRot = (float) Math.toRadians(Mth.sin(cycle * Mth.TWO_PI) * 120f); // reduzido para evitar "modo Naruto"
+				this.left_arm.xRot = -armRot;
+				this.right_arm.xRot = -armRot;
 
-				this.left_arm.xRot = -swing;
-				this.right_arm.xRot = -swing;
-				this.head.xRot += Mth.sin(cycle * 0.5f) * 0.4f;
-				this.torso.y += 0.5f * Mth.sin(cycle);
+				this.head.xRot += Mth.sin(cycle * Mth.TWO_PI) * (float) Math.toRadians(20f);
+				this.torso.y += Mth.sin(cycle * Mth.TWO_PI) * 0.3f;
 				return;
 			}
+
 		}
 
 		// Walking animation
