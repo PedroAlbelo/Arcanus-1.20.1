@@ -1,10 +1,12 @@
 package net.PaiPain.arcanus.block;
 
+import net.PaiPain.arcanus.block.custom.PandoraBoxBlock;
 import net.PaiPain.arcanus.Arcanus;
 import net.PaiPain.arcanus.block.custom.ArcanePillarBlock;
 import net.PaiPain.arcanus.block.custom.CrystalCapstoneBlock;
 import net.PaiPain.arcanus.item.ModItems;
 import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
@@ -79,6 +81,13 @@ public class ModBlocks {
                     .lightLevel(state -> 12)
                     .noOcclusion()// valor de 0 a 15
             ));
+
+    public static final RegistryObject<Block> pandora_box = BLOCKS.register("pandora_box",
+            () -> new PandoraBoxBlock());
+
+    public static final RegistryObject<Item> PandoraBox_item = ITEMS.register("pandora_box",
+            () -> new BlockItem(pandora_box.get(), new Item.Properties()));
+
 
     public static final RegistryObject<Item> ARCANE_PILLAR_ITEM = ITEMS.register("arcane_pillar",
             () -> new BlockItem(ARCANE_PILLAR.get(), new Item.Properties()));
