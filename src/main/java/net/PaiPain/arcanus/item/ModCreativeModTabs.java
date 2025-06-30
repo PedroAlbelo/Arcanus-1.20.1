@@ -30,6 +30,7 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.VOODOO.get());
                         output.accept(ModItems.ARCANE_SLAVE_SPAWN_EGG.get());
                         output.accept(ModItems.ARCANE_HAMMER.get());
+                        output.accept(ModBlocks.pandora_box.get());
                     } ))
                     .build());
 
