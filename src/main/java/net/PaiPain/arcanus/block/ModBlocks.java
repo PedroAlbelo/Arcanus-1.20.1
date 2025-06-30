@@ -83,7 +83,7 @@ public class ModBlocks {
             ));
 
     public static final RegistryObject<Block> pandora_box = BLOCKS.register("pandora_box",
-            () -> new PandoraBoxBlock());
+            () -> new PandoraBoxBlock(BlockBehaviour.Properties.copy(Blocks.CHEST)));
 
     public static final RegistryObject<Item> PandoraBox_item = ITEMS.register("pandora_box",
             () -> new BlockItem(pandora_box.get(), new Item.Properties()));

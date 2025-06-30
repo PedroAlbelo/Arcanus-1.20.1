@@ -1,5 +1,8 @@
 {
   "variants": {
-    "": { "model": "arcanus:block/pandora_box" }
+    "facing=north": { "model": "arcanus:block/pandora_box" },
+    "facing=south": { "model": "arcanus:block/pandora_box", "y": 180 },
+    "facing=west":  { "model": "arcanus:block/pandora_box", "y": 270 },
+    "facing=east":  { "model": "arcanus:block/pandora_box", "y": 90 }
   }
 }
