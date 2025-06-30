@@ -34,7 +34,7 @@ public class PandoraBoxBlock extends HorizontalDirectionalBlock { // [INCREMENTA
     @Override
     public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
         return Block.box(6, 0, 6, 14, 10, 14);
-    }
+    } // alteração feita!
 
     public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
 
