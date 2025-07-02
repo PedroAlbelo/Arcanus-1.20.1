@@ -38,6 +38,8 @@ public class ModItems {
     public static final RegistryObject<Item> ARCANE_HAMMER = ITEMS.register("arcane_hammer",
             () -> new ArcaneHammerItem(new Item.Properties().stacksTo(1)));
 
+    public static final RegistryObject<Item> ANGEL_TEAR = ITEMS.register("angel_tear",
+            () -> new Item(new Item.Properties()));
 
 
 
