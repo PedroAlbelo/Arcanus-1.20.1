@@ -34,6 +34,9 @@
   "entity.arcanus.arcane_slave": "Arcane Slave",
   "item.arcanus.arcane_slave_spawn_egg": "Arcane Slave Spawn Egg",
   "item.arcanus.arcane_hammer": "Arcane Hammer",
+  "block.arcanus.dimensional_door": "Dimensional Door",
+  "item.arcanus.dimensional_door": "Dimensional Door",
+  "item.arcanus.mask": "Clone Mask",
 
   "creativetab.arcanus_tab": "Arcanus"
 }

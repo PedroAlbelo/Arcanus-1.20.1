@@ -8,11 +8,9 @@ import net.PaiPain.arcanus.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.DropExperienceBlock;
-import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -91,7 +89,6 @@ public class ModBlocks {
 
     public static final RegistryObject<Item> ARCANE_PILLAR_ITEM = ITEMS.register("arcane_pillar",
             () -> new BlockItem(ARCANE_PILLAR.get(), new Item.Properties()));
-
 
 
 

@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "arcanus:arcane_dungeon",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 723888122,
+    "spacing": 24,
+    "separation": 8,
+    "type": "minecraft:random_spread"
+  }
+}

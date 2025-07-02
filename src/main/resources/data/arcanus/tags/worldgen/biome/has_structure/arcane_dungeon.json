@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "_comment": "Biomas planos adequados para torres de cobblestone.",
+  "values": [
+    "minecraft:plains",
+    "minecraft:savanna",
+    "minecraft:sunflower_plains",
+    "minecraft:meadow",
+    "minecraft:birch_forest",
+    "minecraft:sparse_jungle",
+    "minecraft:taiga",
+    "minecraft:cherry_grove"
+  ]
+}
