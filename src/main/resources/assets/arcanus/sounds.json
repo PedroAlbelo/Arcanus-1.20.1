@@ -1,0 +1,11 @@
+{
+  "arcanus_and_sky": {
+    "category": "music",
+    "sounds": [
+      {
+        "name": "arcanus:arcanus_and_sky",
+        "stream": true
+      }
+    ]
+  }
+}

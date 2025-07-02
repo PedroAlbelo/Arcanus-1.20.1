@@ -6,6 +6,7 @@ import net.PaiPain.arcanus.item.ModCreativeModTabs;
 import net.PaiPain.arcanus.block.ModBlocks;
 import net.PaiPain.arcanus.item.ModItems;
 import net.PaiPain.arcanus.painting.ModPaintings;
+import net.PaiPain.arcanus.sound.ModSounds;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -32,6 +33,8 @@ public class Arcanus {
         ModEntities.register(modEventBus);
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+
+        ModSounds.SOUND_EVENTS.register(modEventBus);
 
         ModPaintings.PAINTINGS.register(modEventBus);
 

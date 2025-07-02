@@ -5,8 +5,6 @@ import net.PaiPain.arcanus.entity.ModEntities;
 import net.PaiPain.arcanus.item.custom.ArcaneHammerItem;
 import net.PaiPain.arcanus.item.custom.ArcaneWhipItem;
 import net.PaiPain.arcanus.item.custom.ItemVoodoo;
-import net.PaiPain.arcanus.item.custom.MaskItem;
-import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.common.ForgeSpawnEggItem;
@@ -40,8 +38,7 @@ public class ModItems {
     public static final RegistryObject<Item> ARCANE_HAMMER = ITEMS.register("arcane_hammer",
             () -> new ArcaneHammerItem(new Item.Properties().stacksTo(1)));
 
-    public static final RegistryObject<Item> MASK =
-            ITEMS.register("mask", MaskItem::new);
+
 
 
     public static void register(IEventBus bus) {
