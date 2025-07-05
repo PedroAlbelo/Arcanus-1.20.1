@@ -41,7 +41,7 @@ public class ModItems {
     public static final RegistryObject<Item> ANGEL_TEAR = ITEMS.register("angel_tear",
             () -> new Item(new Item.Properties()));
 
-
+/// teste
 
     public static void register(IEventBus bus) {
         ITEMS.register(bus);
