@@ -1,4 +1,37 @@
 {
+  "entity.angel.idle": {
+    "category": "hostile",
+    "sounds": [
+      {
+        "name": "arcanus:entity/angel/angelidle",
+        "stream": false,
+        "volume": 1.0,
+        "pitch": 1.0
+      }
+    ]
+  },
+  "entity.angel.hurt": {
+    "category": "hostile",
+    "sounds": [
+      {
+        "name": "arcanus:entity/angel/angelhurt",
+        "stream": false,
+        "volume": 1.0,
+        "pitch": 1.0
+      }
+    ]
+  },
+  "entity.angel.death": {
+    "category": "hostile",
+    "sounds": [
+      {
+        "name": "arcanus:entity/angel/angeldeath",
+        "stream": false,
+        "volume": 1.0,
+        "pitch": 1.0
+      }
+    ]
+  },
   "arcanus_and_sky": {
     "category": "music",
     "sounds": [

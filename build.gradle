@@ -203,6 +203,19 @@ publishing {
     }
 }
 
+
+tasks.named('processResources', Copy).configure {
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+    from(sourceSets.main.resources.srcDirs) {
+        include '**/*.ogg'
+    }
+}
+
 tasks.withType(JavaCompile).configureEach {
-    options.encoding = 'UTF-8' // Use the UTF-8 charset for Java compilation
+    options.encoding = 'UTF-8'
+}
+
+tasks.register("copyOggs", Copy) {
+    from("src/main/resources/assets/arcanus/sounds/")
+    into("build/resources/main/assets/arcanus/sounds/")
 }

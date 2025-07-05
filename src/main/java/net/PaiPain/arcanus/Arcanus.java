@@ -33,9 +33,7 @@ public class Arcanus {
         ModEntities.register(modEventBus);
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
-
         ModSounds.SOUND_EVENTS.register(modEventBus);
-
         ModPaintings.PAINTINGS.register(modEventBus);
 
         // Adiciona setup e creative tabs
