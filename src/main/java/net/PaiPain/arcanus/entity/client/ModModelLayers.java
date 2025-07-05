@@ -8,4 +8,8 @@ import net.minecraft.resources.ResourceLocation;
 public class ModModelLayers {
     public static final ModelLayerLocation ARCANE_SLAVE_LAYER =
             new ModelLayerLocation(new ResourceLocation(Arcanus.MOD_ID, "arcane_slave"), "main");
+
+    public static final ModelLayerLocation ANGEL_LAYER =
+            new ModelLayerLocation(new ResourceLocation(Arcanus.MOD_ID, "angel"), "main");
 }
+

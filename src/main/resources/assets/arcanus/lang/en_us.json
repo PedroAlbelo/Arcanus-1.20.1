@@ -38,6 +38,9 @@
   "item.arcanus.dimensional_door": "Dimensional Door",
   "item.arcanus.mask": "Clone Mask",
   "item.arcanus.angel_tear": "Angel's Tear",
+  "entity.arcanus.angel": "Angel",
+  "item.arcanus.angel_spawn_egg": "Angel Spawn Egg",
+  "death.attack.found_by_god": "%1$s was FOUND BY GOD",
 
   "creativetab.arcanus_tab": "Arcanus"
 }

@@ -32,6 +32,7 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.ARCANE_HAMMER.get());
                         output.accept(ModBlocks.pandora_box.get());
                         output.accept(ModItems.ANGEL_TEAR.get());
+                        output.accept(ModItems.ANGEL_SPAWN_EGG.get());
                     } ))
                     .build());
 

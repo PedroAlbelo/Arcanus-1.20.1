@@ -1,6 +1,7 @@
 package net.PaiPain.arcanus.entity;
 
 import net.PaiPain.arcanus.Arcanus;
+import net.PaiPain.arcanus.entity.custom.AngelEntity;
 import net.PaiPain.arcanus.entity.custom.ArcaneSlaveEntity;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.EntityType;
@@ -27,6 +28,13 @@ public class ModEntities {
                             .sized(0.6F, 1.95F)
                             .build(new ResourceLocation(Arcanus.MOD_ID, "arcane_slave.png").toString()));
 
+    public static final RegistryObject<EntityType<AngelEntity>> ANGEL =
+            ENTITY_TYPES.register("angel",
+                    () -> EntityType.Builder
+                            .<AngelEntity>of(AngelEntity::new, MobCategory.MONSTER)
+                            .sized(0.9F, 0.9F) // Cabeça voadora, tamanho pequeno
+                            .build(new ResourceLocation(Arcanus.MOD_ID, "angel.png").toString()));
+
     public static void register(IEventBus eventBus) {
         ENTITY_TYPES.register(eventBus);
     }
@@ -34,5 +42,6 @@ public class ModEntities {
     @SubscribeEvent
     public static void registerAttributes(EntityAttributeCreationEvent event) {
         event.put(ARCANE_SLAVE.get(), ArcaneSlaveEntity.createAttributes().build());
+        event.put(ANGEL.get(), AngelEntity.createAttributes().build());
     }
 }

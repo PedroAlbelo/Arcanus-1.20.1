@@ -18,10 +18,14 @@ public class ClientModEvents {
     @SubscribeEvent
     public static void onRegisterLayers(net.minecraftforge.client.event.EntityRenderersEvent.RegisterLayerDefinitions event) {
         event.registerLayerDefinition(net.PaiPain.arcanus.entity.client.ModModelLayers.ARCANE_SLAVE_LAYER, ArcaneSlave::createBodyLayer);
+        event.registerLayerDefinition(ModModelLayers.ANGEL_LAYER, Angel::createBodyLayer);
+
+    }
+    @SubscribeEvent
+    public static void onRegisterRenderers(EntityRenderersEvent.RegisterRenderers event) {
+        event.registerEntityRenderer(ModEntities.ARCANE_SLAVE.get(), ArcaneSlaveRenderer::new);
+        event.registerEntityRenderer(ModEntities.ANGEL.get(), AngelRenderer::new); // 👈 ADICIONE ESSA LINHA
     }
 
-    @SubscribeEvent
-    public static void onRegisterRenderers(net.minecraftforge.client.event.EntityRenderersEvent.RegisterRenderers event) {
-        event.registerEntityRenderer(ModEntities.ARCANE_SLAVE.get(), ArcaneSlaveRenderer::new);
-    }
+
 }

@@ -41,7 +41,12 @@ public class ModItems {
     public static final RegistryObject<Item> ANGEL_TEAR = ITEMS.register("angel_tear",
             () -> new Item(new Item.Properties()));
 
-/// teste
+    public static final RegistryObject<Item> ANGEL_SPAWN_EGG = ModItems.ITEMS.register("angel_spawn_egg",
+            () -> new ForgeSpawnEggItem(ModEntities.ANGEL,
+                    0xF0E6FF,  // lilás claro (primária)
+                    0xA97FFF,  // roxo suave (secundária)
+                    new Item.Properties()));
+
 
     public static void register(IEventBus bus) {
         ITEMS.register(bus);
