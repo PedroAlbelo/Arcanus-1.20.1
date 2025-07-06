@@ -64,11 +64,11 @@ public class AngelEntity extends PathfinderMob {
             if (nearestPlayer != null && this.getTarget() == nearestPlayer) {
                 double distance = this.distanceTo(nearestPlayer);
                 if (distance < 6) {
-                    nearestPlayer.sendSystemMessage(Component.literal("\u00a7l\u00a7cDEUS ESTÁ AQUI"));
+                    nearestPlayer.sendSystemMessage(Component.literal("GOD IS HERE"));
                     nearestPlayer.addEffect(new MobEffectInstance(MobEffects.BLINDNESS, 1200, 0)); // 1 minuto
                     nearestPlayer.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 1200, 1)); // 1 minuto
                 } else if (distance < 12) {
-                    nearestPlayer.sendSystemMessage(Component.literal("\u00a77Deus está perto"));
+                    nearestPlayer.sendSystemMessage(Component.literal("GOD APPROACHES"));
                 }
                 messageCooldown = 200; // 10 segundos
             }

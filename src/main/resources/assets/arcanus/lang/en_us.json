@@ -41,6 +41,7 @@
   "entity.arcanus.angel": "Angel",
   "item.arcanus.angel_spawn_egg": "Angel Spawn Egg",
   "death.attack.found_by_god": "%1$s was FOUND BY GOD",
+  "item.arcanus.arcane_magnet": "Arcane Magnet",
 
   "creativetab.arcanus_tab": "Arcanus"
 }

@@ -3,6 +3,7 @@ package net.PaiPain.arcanus.item;
 import net.PaiPain.arcanus.Arcanus;
 import net.PaiPain.arcanus.entity.ModEntities;
 import net.PaiPain.arcanus.item.custom.ArcaneHammerItem;
+import net.PaiPain.arcanus.item.custom.ArcaneMagnetItem;
 import net.PaiPain.arcanus.item.custom.ArcaneWhipItem;
 import net.PaiPain.arcanus.item.custom.ItemVoodoo;
 import net.minecraft.world.item.Item;
@@ -46,6 +47,9 @@ public class ModItems {
                     0xF0E6FF,  // lilás claro (primária)
                     0xA97FFF,  // roxo suave (secundária)
                     new Item.Properties()));
+
+    public static final RegistryObject<Item> ARCANE_MAGNET = ITEMS.register("arcane_magnet",
+            () -> new ArcaneMagnetItem(new Item.Properties().stacksTo(1)));
 
 
     public static void register(IEventBus bus) {
