@@ -2,18 +2,24 @@ package net.PaiPain.arcanus.item;
 
 import net.PaiPain.arcanus.Arcanus;
 import net.PaiPain.arcanus.entity.ModEntities;
-import net.PaiPain.arcanus.item.custom.ArcaneHammerItem;
-import net.PaiPain.arcanus.item.custom.ArcaneMagnetItem;
-import net.PaiPain.arcanus.item.custom.ArcaneWhipItem;
-import net.PaiPain.arcanus.item.custom.ItemVoodoo;
+import net.PaiPain.arcanus.item.custom.*;
+import net.PaiPain.arcanus.util.ModTiers;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.CreativeModeTabs;
+import net.minecraft.world.item.SwordItem;
+import net.minecraft.world.item.Tier;
+import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraftforge.common.ForgeSpawnEggItem;
+import net.minecraftforge.common.ForgeTier;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import org.apache.http.config.Registry;
+
 
 
 public class ModItems {
@@ -51,6 +57,8 @@ public class ModItems {
     public static final RegistryObject<Item> ARCANE_MAGNET = ITEMS.register("arcane_magnet",
             () -> new ArcaneMagnetItem(new Item.Properties().stacksTo(1)));
 
+    public static final RegistryObject<Item> ARCANE_DAGGER = ITEMS.register("arcane_dagger",
+            () -> new ArcaneDaggerItem(ModTiers.ARCANE, 2, -1.4F, new Item.Properties()));
 
     public static void register(IEventBus bus) {
         ITEMS.register(bus);

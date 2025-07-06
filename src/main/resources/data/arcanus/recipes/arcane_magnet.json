@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " O ",
+    "A A",
+    "D D"
+  ],
+  "key": {
+    "O": {
+      "item": "minecraft:obsidian"
+    },
+    "A": {
+      "item": "arcanus:arcane_essence"
+    },
+    "D": {
+      "item": "minecraft:angel_tear"
+    }
+  },
+  "result": {
+    "item": "arcanus:arcane_magnet",
+    "count": 1
+  }
+}
