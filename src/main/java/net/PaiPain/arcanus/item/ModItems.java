@@ -1,15 +1,13 @@
 package net.PaiPain.arcanus.item;
 
+import net.PaiPain.arcanus.item.custom.WhisperBladeItem;
 import net.PaiPain.arcanus.Arcanus;
 import net.PaiPain.arcanus.entity.ModEntities;
 import net.PaiPain.arcanus.item.custom.*;
 import net.PaiPain.arcanus.util.ModTiers;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.TagKey;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.CreativeModeTabs;
-import net.minecraft.world.item.SwordItem;
-import net.minecraft.world.item.Tier;
+import net.minecraft.world.item.*;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.common.ForgeTier;
@@ -59,6 +57,16 @@ public class ModItems {
 
     public static final RegistryObject<Item> ARCANE_DAGGER = ITEMS.register("arcane_dagger",
             () -> new ArcaneDaggerItem(ModTiers.ARCANE, 2, -1.4F, new Item.Properties()));
+
+
+    public static final RegistryObject<Item> OATH_OF_TWILIGHT = ITEMS.register("oath_of_twilight",
+            () -> new OathOfTwilightItem());
+
+    public static final RegistryObject<Item> WHISPERBLADE = ITEMS.register("whisperblade",
+            () -> new WhisperBladeItem());
+
+    public static final RegistryObject<Item> BLOOD_MOON = ITEMS.register("blood_moon",
+            () -> new BloodMoonItem());
 
     public static void register(IEventBus bus) {
         ITEMS.register(bus);

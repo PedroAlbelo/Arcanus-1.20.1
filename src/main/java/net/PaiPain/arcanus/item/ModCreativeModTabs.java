@@ -34,6 +34,11 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.ANGEL_TEAR.get());
                         output.accept(ModItems.ANGEL_SPAWN_EGG.get());
                         output.accept(ModItems.ARCANE_MAGNET.get());
+                        output.accept(ModItems.OATH_OF_TWILIGHT.get());
+                        output.accept(ModItems.WHISPERBLADE.get());
+                        output.accept(ModItems.ARCANE_DAGGER.get());
+                        output.accept(ModItems.BLOOD_MOON.get());
+
                     } ))
                     .build());
 

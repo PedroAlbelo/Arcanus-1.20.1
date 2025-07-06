@@ -43,6 +43,9 @@
   "death.attack.found_by_god": "%1$s was FOUND BY GOD",
   "item.arcanus.arcane_magnet": "Arcane Magnet",
   "item.arcanus.arcane_dagger": "Arcane Dagger",
+  "item.arcanus.oath_of_twilight": "Oath of Twilight",
+  "item.arcanus.whisperblade": "Whisperblade",
+  "item.seumod.whisperblade.tooltip": "§5✦ Steals life on hit and inflicts §dSlowness§5 and §dBlindness§5 for 2 seconds.",
 
   "creativetab.arcanus_tab": "Arcanus"
 }
