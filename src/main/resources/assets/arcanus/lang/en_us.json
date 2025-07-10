@@ -45,8 +45,7 @@
   "item.arcanus.oath_of_twilight": "Oath of Twilight",
   "item.arcanus.whisperblade": "Whisperblade",
   "item.arcanus.blood_moon": "Blood Moon",
-  "item.seumod.whisperblade.tooltip": "§5 Steals life on hit and inflicts §dSlowness§5 and §dBlindness§5 for 2 seconds.",
-  "item.arcanus.whisper_blade.tooltip": "§5Lifesteal: 50%. Her blade speaks only in blood.",
+  "item.arcanus.whisperblade.tooltip": "§5Lifesteal: 50%. Her blade speaks only in blood.",
 
   "creativetab.arcanus_tab": "Arcanus"
 }
