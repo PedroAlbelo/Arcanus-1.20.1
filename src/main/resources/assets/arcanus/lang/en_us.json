@@ -40,12 +40,13 @@
   "item.arcanus.angel_tear": "Angel's Tear",
   "entity.arcanus.angel": "Angel",
   "item.arcanus.angel_spawn_egg": "Angel Spawn Egg",
-  "death.attack.found_by_god": "%1$s was FOUND BY GOD",
   "item.arcanus.arcane_magnet": "Arcane Magnet",
   "item.arcanus.arcane_dagger": "Arcane Dagger",
   "item.arcanus.oath_of_twilight": "Oath of Twilight",
   "item.arcanus.whisperblade": "Whisperblade",
-  "item.seumod.whisperblade.tooltip": "§5✦ Steals life on hit and inflicts §dSlowness§5 and §dBlindness§5 for 2 seconds.",
+  "item.arcanus.blood_moon": "Blood Moon",
+  "item.seumod.whisperblade.tooltip": "§5 Steals life on hit and inflicts §dSlowness§5 and §dBlindness§5 for 2 seconds.",
+  "item.arcanus.whisper_blade.tooltip": "§5Lifesteal: 50%. Her blade speaks only in blood.",
 
   "creativetab.arcanus_tab": "Arcanus"
 }
